@@ -76,7 +76,7 @@ for(sheetKey in sheets){
         }
         cellObj[dataKeys[index]] = cell['v'];
         if(indexMatch[1] === cellEnd){
-          dataToIndex.push([[cellObj['IFSC']], cellObj]);
+          dataToIndex.push([cellObj['IFSC'], cellObj]);
         }
       }
     }
