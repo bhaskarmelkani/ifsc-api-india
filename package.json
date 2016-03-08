@@ -2,9 +2,9 @@
   "name": "ifsc-api-india",
   "version": "1.0.0",
   "description": "API for ISFC codes using xls file.",
-  "main": "esToExcel.js",
+  "main": "xlsToEs.js",
   "scripts": {
-    "start": "node esToExcel.js",
+    "start": "node xlsToEs.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,7 +15,10 @@
     "ifsc",
     "api",
     "bank",
-    "india"
+    "india",
+    "xls to es",
+    "elasticsearch",
+    "excel"
   ],
   "author": "Bhaskar Melkani <melkani.bhaskar@gmail.co>",
   "license": "ISC",

@@ -17,7 +17,9 @@ var indexName = "bank_details";
 
 function addDocument(document, id, callback) {
   try{
-  if(false){
+  if(id){
+    console.log('Id: ' + id );
+    console.log('Document: ' + JSON.stringify(document));
     return elasticClient.index({
       index: indexName,
       type: "spreadsheet",
@@ -29,6 +31,7 @@ function addDocument(document, id, callback) {
       }
     });
   }else{
+    console.log('Document: ' + JSON.stringify(document));
     return elasticClient.index({
       index: indexName,
       type: "spreadsheet",
@@ -82,12 +85,8 @@ for(sheetKey in sheets){
 
 
 function iterateAndIndex(){
-  console.log('iterateAndIndex');
-  console.log(dataToIndex.length);
   var obj = dataToIndex.pop();
-  console.log(obj);
   if(!obj){
-    console.log('returning');
     return; 
   }
   addDocument(obj[1], obj[0], iterateAndIndex);
