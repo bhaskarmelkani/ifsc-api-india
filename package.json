@@ -4,6 +4,7 @@
   "description": "API for ISFC codes using xls file.",
   "main": "esToExcel.js",
   "scripts": {
+    "start": "node esToExcel.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
