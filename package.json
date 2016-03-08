@@ -1,0 +1,29 @@
+{
+  "name": "ifsc-api-india",
+  "version": "1.0.0",
+  "description": "API for ISFC codes using xls file.",
+  "main": "esToExcel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskarmelkani/ifsc-api-india.git"
+  },
+  "keywords": [
+    "ifsc",
+    "api",
+    "bank",
+    "india"
+  ],
+  "author": "Bhaskar Melkani <melkani.bhaskar@gmail.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhaskarmelkani/ifsc-api-india/issues"
+  },
+  "homepage": "https://github.com/bhaskarmelkani/ifsc-api-india#readme",
+  "dependencies": {
+    "elasticsearch": "^10.1.3",
+    "xlsx": "^0.8.0"
+  }
+}
